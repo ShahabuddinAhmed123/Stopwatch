@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chokokutai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="h-[100%] w-[100%] bg-black flex flex-col items-center px-[20px] gap-[20px] py-[100px]">
+    <h1 class="text-[60px] text-gray-200 max-[600px]:text-[40px]">Stop watch</h1>
+    <div id="timer" class="w-[500px] h-[500px] bg-black border-[5px] relative border-blue-300 p-[20px] rounded-[50%] flex flex-col items-center justify-around mx-auto gap-[50px] max-[540px]:w-[100%] max-[540px]:h-auto max-[540px]:py-[80px] max-[540px]:rounded-[20px] max-[540px]:px-[10px]">
+        <div class="ball bg-white absolute w-[20px] h-[20px] rounded-[50%] top-[48%] max-[540px]:hidden " id="ball"></div>
+        <div id="timeDisplay" class="flex items-center w-[380px] text-[70px] font-semibold  text-white max-[700px]:w-[280px] max-[700px]:text-[50px] max-[700px]:h-auto max-[700px]:bg-transparent max-[700px]:border-none max-[700px]:p-0  max-[400px]:text-[40px] max-[400px]:w-[200px]">
+            <div class="flex">
+            <span>00:</span>
+          <span>00:</span>
+          <span>00.</span>
+        </div>
+          <span>00</span>
+        </div>
+</div>
+<div id="controls" class="flex  justify-center gap-[30px] w-[100%] max-[400px]:gap-[20px] max-[400px]:flex-wrap">
+    <button id="startBtn" onclick="start()" class="bg-green-500 p-[20px] w-[100px] h-[50px] rounded-[10px] font-semibold text-white text-[20px] flex items-center justify-center hover:bg-green-600 max-[400px]:w-[33%]">Start</button>
+    <button id="stopBtn" onclick="stop()" class="bg-red-500 p-[20px] w-[100px] h-[50px] rounded-[10px] font-semibold text-white text-[20px] flex items-center justify-center hover:bg-red-600 max-[400px]:w-[33%]">Stop</button>
+    <button id="resetBtn" onclick="reset()" class="bg-gray-500 p-[20px] w-[100px] h-[50px] rounded-[10px] font-semibold text-white text-[20px] flex items-center justify-center hover:bg-gray-600 max-[400px]:w-[33%]">Reset</button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
