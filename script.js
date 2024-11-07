@@ -25,7 +25,7 @@ function reset(){
 startTime = 0;
 stopTime = 0;
 isRunning = false;
-display.textContent = '00:00:00.00'
+display.textContent = '00:00:00:00'
 }
 function update(){
     const currentTime = Date.now()
@@ -36,7 +36,7 @@ function update(){
     let sec = Math.floor(stopTime / (1000) % 60)
     let milisec = Math.floor((stopTime % 1000)/10)
 
-    display.textContent = `${formatTime(hr)}:${formatTime(min)}:${formatTime(sec)}.${formatTime(milisec)}`;
+    display.textContent = `${formatTime(hr)}:${formatTime(min)}:${formatTime(sec)}:${formatTime(milisec)}`;
 
 }
 function formatTime(time) {
