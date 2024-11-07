@@ -34,7 +34,7 @@ function update(){
     let hr = Math.floor(stopTime / (1000 * 60 * 60))
     let min = Math.floor(stopTime / (1000 * 60 ) % 60)
     let sec = Math.floor(stopTime / (1000) % 60)
-    let milisec = Math.floor((stopTime % 999)/100)
+    let milisec = Math.floor((stopTime % 1000)/10)
 
     display.textContent = `${formatTime(hr)}:${formatTime(min)}:${formatTime(sec)}.${formatTime(milisec)}`;
 
